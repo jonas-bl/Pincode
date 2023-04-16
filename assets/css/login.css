@@ -1,0 +1,178 @@
+* {
+    font-family: "Roboto";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.animation {
+    animation: up .5s both;
+}
+
+@keyframes up {
+    0% {}
+
+    100% {
+        transform: translateY(-100%);
+        filter: blur(10px);
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+a {
+    font-size: 1.2rem;
+    color: black;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.login-div {
+    font-size: 3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.input-table {
+    display: inline-block;
+}
+
+.input-icircle {
+    font-size: 0rem;
+    color: transparent;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+.number-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-icircle-filled {
+    font-size: 0rem;
+    color: transparent;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.keypad-button {
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    color: black;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: transparent;
+    margin: 2px;
+}
+
+.keypad-button:hover {
+    background-color: rgba(9, 9, 9, 0.1);
+}
+
+.bg-image {
+    background: url("../img/passwd-background.jpg") no-repeat center center fixed;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
