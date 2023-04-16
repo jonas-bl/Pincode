@@ -34,7 +34,6 @@ async function reset(shake) {
   const e = document.getElementById("circles");
   if (shake) e.className = "shake";
   await delay(700);
-  console.info(pw);
 
   while (input >= 0) {
     const element = document.getElementById("circle" + input);
